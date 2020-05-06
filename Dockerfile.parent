@@ -1,0 +1,7 @@
+# syntax=docker/dockerfile:experimental
+
+FROM alpine
+
+ADD thedate /
+
+ENTRYPOINT ["sleep", "1000000"]

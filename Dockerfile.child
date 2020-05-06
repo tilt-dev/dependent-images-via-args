@@ -1,0 +1,8 @@
+# syntax=docker/dockerfile:experimental
+
+ARG BASE=parent
+
+FROM ${BASE}
+
+RUN ["echo", "the file says:"]
+RUN ["cat", "/thedate"]
